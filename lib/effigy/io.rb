@@ -1,3 +1,2 @@
-Dir[File.join(File.dirname(__FILE__), 'io', '*.rb')].each do |file|
-  require file
-end
+path = File.join(__dir__, 'io', '*.rb')
+Dir[path].each { |file| require file }

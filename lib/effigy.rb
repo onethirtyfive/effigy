@@ -5,6 +5,4 @@ module Effigy
   COMPRESSION_MASK = Wire::EDemoCommands::DEM_ISCOMPRESSED_S2.to_i
 end
 
-Dir[File.join(File.dirname(__FILE__), 'effigy', '*.rb')].each do |file|
-  require file
-end
+path = File.join(__dir__, 'effigy', '*.rb')
